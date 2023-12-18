@@ -1,5 +1,5 @@
 from transformers import pipeline
-from googletrans import Translator
+# from googletrans import Translator
 translator = None
 
 
@@ -10,13 +10,13 @@ def translate_ko2en(text_list):
     output_list = [translator(text, max_length=512)[0]['translation_text'] for text in text_list]
     return output_list
 
-google_translator = None
-def google_translate_ko2en(text_list):
-    global google_translator
-    if google_translator is None:
-        google_translator = Translator()
-    output_list = [google_translator.translate(text, dest='en').text for text in text_list]
-    return output_list
+# google_translator = None
+# def google_translate_ko2en(text_list):
+#     global google_translator
+#     if google_translator is None:
+#         google_translator = Translator()
+#     output_list = [google_translator.translate(text, dest='en').text for text in text_list]
+#     return output_list
 
 if __name__ == "__main__":
     # translator = pipeline('translation', model='facebook/nllb-200-distilled-600M', device=0, src_lang='kor_Hang', tgt_lang='eng_Latn', max_length=512)

@@ -66,6 +66,7 @@ def get_html(result, caption, img_size=180):
 </table>
             """
     return result_html
+    
 def retrieve(prompt):
     english_prompts = translate_ko2en([prompt])
     generated_images = generate_image(english_prompts)

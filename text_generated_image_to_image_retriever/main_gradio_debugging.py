@@ -1,7 +1,7 @@
 import gradio as gr
 import utils
 from PIL import Image
-from ko_to_en_translation import translate_ko2en, google_translate_ko2en
+from ko_to_en_translation import translate_ko2en #, google_translate_ko2en
 from text_to_image_generation import generate_image, generate_controlnet_image
 from image_to_image_retrieval import retrieve_image_with_image, retrieve_image_with_text, retrieve_image_with_multiple_images
 
