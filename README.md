@@ -13,7 +13,7 @@
 Version 1.0에서의 한계를 극복하고자 이미지 생성 기반 검색 기술을 제안하였습니다. Text encoder가 복잡한 텍스트의 representation을 잘 표현하지 못한다는 한계에 착안하여 image encoder만 사용하는 방식을 구상했습니다.
 
 구체적으로, 텍스트가 주어지면 text-to-image diffusion model을 사용하여 이미지를 생성하고, image encoder로 representation을 구한 뒤 비슷한 representation의 다른 image를 검색하는 방식입니다.
-                                
+                                 
 
 ## 필요 패키지 설치
 
