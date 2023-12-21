@@ -62,4 +62,4 @@ python text_generated_image_to_image_retriever/main_gradio_comparison.py
 
 - [ ] 생성된 image로 image encoder fine-tuning
 - [ ] label 정보를 활용한 supervised training
-- [ ] 정량적 검색 성능 평가
+- [ ] 정량적 검색 성능 평가 
