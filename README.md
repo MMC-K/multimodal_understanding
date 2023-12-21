@@ -25,11 +25,23 @@ Version 1.0에서의 한계를 극복하고자 이미지 생성 기반 검색 �
 
 faiss의 자세한 설차 방법은 [FAISS](https://github.com/facebookresearch/faiss/blob/main/INSTALL.md)를 참고하시길 바랍니다.
 
-## 필요한 파일 다운로드
+## 필요한 파일 설정
+### 1. 파일 다운로드
+- 사전 학습된 멀티 모달 이해 모델: [hf_model.zip](https://drive.google.com/file/d/1OegOe60tNlcmq4b0kF5vcDax27q5_D6n/view?usp=sharing)
+- kfashion fvecs 파일 (패션이미지로 추출된 representation): [fvecs.zip](https://drive.google.com/file/d/11ogSDF8kb6lJIEXydbA0lt6-uxgTyx3x/view?usp=sharing)
+- kfashion fvecs와 연결 된 kfashion 이미지 정보: [kfashion_images_group.tsv](https://drive.google.com/file/d/1d1VKIJ8Ow1sQFF4aPJJm3cgxPdvN1RNd/view?usp=sharing)
+- kfashion 이미지의 tag 정보: [em_group_table.json](https://drive.google.com/file/d/1FsvvOrON8AvdCKaXbTUwbGUq-MgBgp3j/view?usp=sharing)
+### 2. 파일 폴더 구조 설정
+```bash
+mkdir -p <project_dir>/result/simple_query_ko
+unzip fvecs.zip
+unzip hf_model.zip
+mv fvecs hf_model <project_dir>/result/simple_query_ko
+mv kfashion_images_group.tsv <project_dir>/../
 
-- [사전 학습된 멀티 모달 이해 모델](https://tmp)
-- [kfashion fvecs 파일 패션이미지로 추출된 representation](https://tmp)
-- [kfashion dataset의 tag 정보](https://tmp)
+mkdir -p <project_dir>/text_generated_image_to_image_retriever/data/
+mv em_group_table.json <project_dir>/text_generated_image_to_image_retriever/data
+```
 
 ## 검색 기능 실행 방법
 
