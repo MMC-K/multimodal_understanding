@@ -55,7 +55,7 @@ python text_generated_image_to_image_retriever/main_gradio_comparison.py
 
 
 ## Acknowledgement
- 
+
 본 연구는 정부(과학기술정보통신부)의 재원으로 지원을 받아 수행된 연구입니다. (정보통신기획평가원, 2022-0-00320), (정보통신기획평가원, 2022-0-00608), (정보통신기획평가원, 2021-0-00537), (정보통신산업진흥원, S0316-21-1002)
 
 # TODO
